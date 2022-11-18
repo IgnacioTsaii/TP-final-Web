@@ -12,7 +12,7 @@
     <!-- Inicio del Navbar -->
       <nav id="navbar" class="navbar navbar-expand-md fixed-top bg-dark navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand d-flex align-self-center" href="index.html">LOGO</a>
+          <a class="navbar-brand d-flex align-self-center" href="index.html"><img width="60" src="img/logo.jpg" alt="logo de padre cafe"></a>  
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuDesplegable" aria-controls="menuDesplegable" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -25,13 +25,13 @@
                 <a class="nav-link" href="#about-us">About us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#gallery">Menu</a>
+                <a class="nav-link" href="#menu">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#faq">Contact</a>
+                <a class="nav-link" href="#contacto">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#callToAction">Tu Pedido</a>
+                <a class="nav-link" href="#tuPedido">Tu Pedido</a>
               </li>
             </ul>
           </div>
@@ -43,21 +43,97 @@
       <!--Inicio de contenedor principal-->
       <div class="container-fluid mt-3">
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-6 text-center">
-          <img src="img/menuImg1.png" alt="foto de cafe">
+          <div class="d-sm-block d-md-none col-12 text-center">
+            <img src="img/menuImg1.png" alt="foto de cafe">
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 text-center">
+          <div class="d-sm-block d-md-none col-12 text-center">
             <h3 class="font-weight-bold display-1 fw-bold">Un cafe es siempre una buena idea!!</h3>
             <p>Toma un descanso para tomar un cafe</p>
             <a href="#" class="btn btn-outline-success" role="button">VER MENÚ</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="d-none d-md-block col-md-6 text-center">
+            <h3 class="font-weight-bold display-1 fw-bold">Un cafe es siempre una buena idea!!</h3>
+            <p>Toma un descanso para tomar un cafe</p>
+            <a href="#menu" class="btn btn-outline-success" role="button">VER MENÚ</a>
+          </div>
+          <div class="d-none d-md-block col-md-6 text-center">
+            <img src="img/menuImg1.png" alt="foto de cafe">
           </div>
         </div>
       </div>
       <!--Fin del contenedor principal-->
 
       <!--Inicio del About us-->
-      div
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-6">
+            <img width="300" src="img/local-5.jpg" alt="Foto de cafetera">
+          </div>
+          <div class="col-6 text-center">
+            <h2>About Us</h2>
+            <p>Somos una empresa dedicada a la satisfacción de nuestros clientes con una amplia carta bebidas a base de café y granos de café, 
+              en un lugar donde se puede respirar tranquilidad tanto para nuestros clientes como para nuestra fuerza de trabajo, 
+              siempre comprometidos con la calidad de nuestros productos y servicio sin dejar de lado el cuidado del medio ambiente, 
+              el cuidado de nuestra gente y de nuestra localidad.
+            </p>
+            <a href="#about-us" class="btn btn-outline-success" role="button">Mas sobre nosotros</a>
+          </div>
+        </div>
+      </div>
       <!--Fin del About us-->
+
+      <!--Inicio de lo mas vendido-->
+      <section class="g-4 px-4 py-5 bg-light">
+        <h3>Los productos mas populares</h3>
+        <div class="row row-cols-1 row-sols-sm-2 row-cols-md-4">
+          <div class="col">
+            <div class="card shadow-sm p-4">
+              <div class="card-body">
+                <img width="60" src="img/menuImg1.png" alt="Foto de un vaso de cafe">
+                <h5 class="text-primary card-title">Cafe latte</h5>
+                <p class="card-text">Descripcion de como es un cafe latte</p>
+                <a href="#compra-cafe1" class="btn btn-outline-success" role="button">Comprar</a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card shadow-sm p-4">
+              <div class="card-body">
+                <img width="60" src="img/menuImg1.png" alt="Foto de un vaso de cafe">
+                <h5 class="text-primary card-title">Cafe latte</h5>
+                <p class="card-text">Descripcion de como es un cafe latte</p>
+                <a href="#compra-cafe2" class="btn btn-outline-success" role="button">Comprar</a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card shadow-sm p-4">
+              <div class="card-body">
+                <img width="60" src="img/menuImg1.png" alt="Foto de un vaso de cafe">
+                <h5 class="text-primary card-title">Cafe latte</h5>
+                <p class="card-text">Descripcion de como es un cafe latte</p>
+                <a href="#compra-cafe3" class="btn btn-outline-success" role="button">Comprar</a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card shadow-sm p-4">
+              <div class="card-body">
+                <img width="60" src="img/menuImg1.png" alt="Foto de un vaso de cafe">
+                <h5 class="text-primary card-title">Cafe latte</h5>
+                <p class="card-text">Descripcion de como es un cafe latte</p>
+                <a href="#compra-cafe4" class="btn btn-outline-success" role="button">Comprar</a>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!--Fin de lo mas vendido-->
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>

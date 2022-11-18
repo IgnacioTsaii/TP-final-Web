@@ -1,5 +1,5 @@
 About Us
-Somos una empresa dedicada a la satisfacción de nuestros clientes con  una amplia carta de postres y bebidas a base de café, 
+Somos una empresa dedicada a la satisfacción de nuestros clientes con una amplia carta bebidas a base de café y granos de café, 
 en un lugar donde se puede respirar tranquilidad tanto para nuestros clientes como para nuestra fuerza de trabajo, 
 siempre comprometidos con  la calidad de nuestros productos y servicio sin dejar de lado el cuidado del medio ambiente, 
 el cuidado de nuestra gente  y de nuestra localidad.
@@ -36,5 +36,7 @@ que explore nuestras amplias selecciones más singulares.
 
 Para alcanzarlo nos abastecemos de los mejores granos de café arábicos siguiendo siempre estrictos principios éticos.
 
+Consejo del profe para agregar cosas de JS
+Agregar por ejemplo botón de Jquery venom button
 
 
