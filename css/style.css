@@ -1,7 +1,12 @@
 body{
-    margin: 0;
-    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 #navbar{
-    background-color: blue;
+    background-color: rgb(0, 0, 0);
+}
+#carousel img{
+    filter: brightness(50%)
+}
+footer{
+    background-color: rgb(0, 0, 0);
 }

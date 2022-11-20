@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="venom-button.min.css" />
   </head>
   <body>
     <header>
     <!-- Inicio del Navbar -->
-      <nav id="navbar" class="navbar navbar-expand-md fixed-top bg-dark navbar-dark">
+      <nav id="navbar" class="navbar navbar-expand-md fixed-top navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand d-flex align-self-center" href="index.html"><img width="60" src="img/logo.jpg" alt="logo de padre cafe"></a>  
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuDesplegable" aria-controls="menuDesplegable" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,38 +44,51 @@
       </nav>
     </header>
   <!-- Fin del Navbar -->   
-    <main class="pt-5">
-      <!--Inicio de contenedor principal-->
-      <div class="container-fluid mt-3">
-        <div class="row">
-          <div class="d-sm-block d-md-none col-12 text-center">
-            <img src="img/menuImg1.png" alt="foto de cafe">
+    <main class="pt-4">
+      <!--Inicio de contenedor principal carrusel-->
+      <div id="carousel" class="carousel slide h-100px" data-bs-ride="false">
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100">
+            <img src="img/homeImg1.jpg" class="d-block w-100 h-100" alt="El mejor del mundo">
+            <div class="carousel-caption d-block text-center">
+              <h4>First slide label</h4>
+              <p>Some representative placeholder content for the first slide.</p>
+              <button type="button" class="btn btn-success btn-lg">Ver menu</button>
+            </div>
           </div>
-          <div class="d-sm-block d-md-none col-12 text-center">
-            <h3 class="font-weight-bold display-1 fw-bold">Un cafe es siempre una buena idea!!</h3>
-            <p>Toma un descanso para tomar un cafe</p>
-            <a href="#" class="btn btn-outline-success" role="button">VER MENÚ</a>
+          <div class="carousel-item h-100">
+            <img src="img/homeImg2.jpg" class="d-block w-100 h-100" style="    background-color: rgba(0, 0, 0, 0.5); /* Añadir para conseguir el fondo con opacidad */" alt="El mejor del mundo">
+            <div class="carousel-caption d-block text-center">
+              <h4>Second slide label</h4>
+              <p>Some representative placeholder content for the second slide.</p>
+              <button type="button" class="btn btn-success btn-lg">Ver menu</button>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img src="img/homeImg3.jpg" class="d-block w-100 h-100" style="    background-color: rgba(0, 0, 0, 0.5); /* Añadir para conseguir el fondo con opacidad */" alt="El mejor del mundo">
+            <div class="carousel-caption d-block text-center">
+              <h4>Third slide label</h4>
+              <p>Some representative placeholder content for the third slide.</p>
+              <button type="button" class="btn btn-success btn-lg">Ver menu</button>
+            </div>
           </div>
         </div>
-
-        <div class="row">
-          <div class="d-none d-md-block col-md-6 text-center">
-            <h3 class="font-weight-bold display-1 fw-bold">Un cafe es siempre una buena idea!!</h3>
-            <p>Toma un descanso para tomar un cafe</p>
-            <a href="#menu" class="btn btn-outline-success" role="button">VER MENÚ</a>
-          </div>
-          <div class="d-none d-md-block col-md-6 text-center">
-            <img src="img/menuImg1.png" alt="foto de cafe">
-          </div>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
       <!--Fin del contenedor principal-->
 
       <!--Inicio del About us-->
-      <div class="container py-5">
+      <div class="container-fluid py-5">
         <div class="row">
           <div class="col-6">
-            <img width="300" src="img/local-5.jpg" alt="Foto de cafetera">
+            <img width="300" src="img/aboutImg.jpg" alt="Foto de cafetera">
           </div>
           <div class="col-6 text-center">
             <h2>About Us</h2>
@@ -86,14 +104,14 @@
       <!--Fin del About us-->
 
       <!--Inicio de lo mas vendido-->
-      <section class="g-4 px-4 py-5 bg-light">
+      <section class="g-4 px-4 py-3 bg-light">
         <h3>Los productos mas populares</h3>
         <div class="row row-cols-1 row-sols-sm-2 row-cols-md-4">
           <div class="col">
             <div class="card shadow-sm p-4">
               <div class="card-body">
                 <img width="60" src="img/menuImg1.png" alt="Foto de un vaso de cafe">
-                <h5 class="text-primary card-title">Cafe latte</h5>
+                <h5 class="text-primary card-title pt-3">Cafe latte</h5>
                 <p class="card-text">Descripcion de como es un cafe latte</p>
                 <a href="#compra-cafe1" class="btn btn-outline-success" role="button">Comprar</a>
               </div>
@@ -103,8 +121,8 @@
           <div class="col">
             <div class="card shadow-sm p-4">
               <div class="card-body">
-                <img width="60" src="img/menuImg1.png" alt="Foto de un vaso de cafe">
-                <h5 class="text-primary card-title">Cafe latte</h5>
+                <img width="60" src="img/menuImg2.png" alt="Foto de un vaso de cafe">
+                <h5 class="text-primary card-title pt-3">Cafe latte</h5>
                 <p class="card-text">Descripcion de como es un cafe latte</p>
                 <a href="#compra-cafe2" class="btn btn-outline-success" role="button">Comprar</a>
               </div>
@@ -114,8 +132,8 @@
           <div class="col">
             <div class="card shadow-sm p-4">
               <div class="card-body">
-                <img width="60" src="img/menuImg1.png" alt="Foto de un vaso de cafe">
-                <h5 class="text-primary card-title">Cafe latte</h5>
+                <img width="60" src="img/menuImg3.png" alt="Foto de un vaso de cafe">
+                <h5 class="text-primary card-title pt-3">Cafe latte</h5>
                 <p class="card-text">Descripcion de como es un cafe latte</p>
                 <a href="#compra-cafe3" class="btn btn-outline-success" role="button">Comprar</a>
               </div>
@@ -125,8 +143,8 @@
           <div class="col">
             <div class="card shadow-sm p-4">
               <div class="card-body">
-                <img width="60" src="img/menuImg1.png" alt="Foto de un vaso de cafe">
-                <h5 class="text-primary card-title">Cafe latte</h5>
+                <img width="60" src="img/menuImg4.png" alt="Foto de un vaso de cafe">
+                <h5 class="text-primary card-title pt-3">Cafe latte</h5>
                 <p class="card-text">Descripcion de como es un cafe latte</p>
                 <a href="#compra-cafe4" class="btn btn-outline-success" role="button">Comprar</a>
               </div>
@@ -134,17 +152,30 @@
           </div>
       </section>
       <!--Fin de lo mas vendido-->
+      <article>
+        <div id="myButton"></div>
+      </article>
+      
     </main>
     <!--Inicio del Footer-->
-    <footer class="bg-dark py-4">
+    <footer class="py-4">
       <div class="text-center text-light">
         <img width="100" src="img/logo.jpg" alt="Logo de padre cafe">
         <p>
           Este es el lugar perfecto para encontrar un lugar agradable y acogedor para tomar un sorbo. Encontraras cafe de calidad, cafe en grano y mucho mas en este sitio web
         </p>
       </div>
+      <div class="text-center text-light">
+        <a href="https://es-la.facebook.com/"><i class="bi bi-facebook text-light px-2"></i></a>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram text-light px-2"></i></a>
+        <a href="https://twitter.com/?lang=es"><i class="bi bi-twitter text-light px-2"></i></a>
+        <a href="https://github.com/login"><i class="bi bi-github text-light px-2"></i></a>
+        <a href="https://web.whatsapp.com/"><i class="bi bi-whatsapp text-light px-2"></i></a>
+      </div>
     </footer>
     <!--Fin del Footer-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="/path/to/cdn/jquery.min.js"></script>
+    <script src="venom-button.min.js"></script>
   </body>
 </html>
