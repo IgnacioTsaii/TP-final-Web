@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="venom-button.min.css" />
   </head>
   <body>
     <header>
@@ -30,13 +29,10 @@
                 <a class="nav-link" href="#about-us">About us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#menu">Menu</a>
+                <a class="nav-link" href="menu.html">Menú</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contacto">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#tuPedido">Tu Pedido</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
               </li>
             </ul>
           </div>
@@ -49,27 +45,27 @@
       <div id="carousel" class="carousel slide h-100px" data-bs-ride="false">
         <div class="carousel-inner h-100">
           <div class="carousel-item active h-100">
-            <img src="img/homeImg1.jpg" class="d-block w-100 h-100" alt="El mejor del mundo">
+            <img src="img/homeImg1.jpg" class="d-block w-100 h-100" alt="Padre cafeteria carrucel">
             <div class="carousel-caption d-block text-center">
-              <h4>First slide label</h4>
-              <p>Some representative placeholder content for the first slide.</p>
-              <button type="button" class="btn btn-success btn-lg">Ver menu</button>
+              <h1>Padre coffee roasters</h1>
+              <p>La mejor tienda de cafe de especialidad, cosechamos nuestro propio grano.</p>
+              <a href="menu.html"><button type="button" class="btn btn-success btn-lg">Ver menu</button></a>
             </div>
           </div>
           <div class="carousel-item h-100">
-            <img src="img/homeImg2.jpg" class="d-block w-100 h-100" style="    background-color: rgba(0, 0, 0, 0.5); /* Añadir para conseguir el fondo con opacidad */" alt="El mejor del mundo">
+            <img src="img/homeImg2.jpg" class="d-block w-100 h-100" style="background-color: rgba(0, 0, 0, 0.5);" alt="Padre cafeteria carrucel">
             <div class="carousel-caption d-block text-center">
-              <h4>Second slide label</h4>
+              <h1>Padre coffe roasters</h1>
               <p>Some representative placeholder content for the second slide.</p>
-              <button type="button" class="btn btn-success btn-lg">Ver menu</button>
+              <a href="menu.html"><button type="button" class="btn btn-success btn-lg">Ver menu</button></a>
             </div>
           </div>
           <div class="carousel-item h-100">
-            <img src="img/homeImg3.jpg" class="d-block w-100 h-100" style="    background-color: rgba(0, 0, 0, 0.5); /* Añadir para conseguir el fondo con opacidad */" alt="El mejor del mundo">
+            <img src="img/homeImg3.jpg" class="d-block w-100 h-100" style="background-color: rgba(0, 0, 0, 0.5);" alt="Padre cafeteria carrucel">
             <div class="carousel-caption d-block text-center">
               <h4>Third slide label</h4>
               <p>Some representative placeholder content for the third slide.</p>
-              <button type="button" class="btn btn-success btn-lg">Ver menu</button>
+              <a href="menu.html"><button type="button" class="btn btn-success btn-lg">Ver menu</button></a>
             </div>
           </div>
         </div>
@@ -85,19 +81,24 @@
       <!--Fin del contenedor principal-->
 
       <!--Inicio del About us-->
-      <div class="container-fluid py-5">
+      <div id="about-us" class="container-fluid py-5">
         <div class="row">
-          <div class="col-6">
-            <img width="300" src="img/aboutImg.jpg" alt="Foto de cafetera">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-5 text-center">
+            <img id="img-about" width="300px" height="350px" src="img/aboutImg.jpg" alt="Foto de cafetera">
           </div>
-          <div class="col-6 text-center">
-            <h2>About Us</h2>
-            <p>Somos una empresa dedicada a la satisfacción de nuestros clientes con una amplia carta bebidas a base de café y granos de café, 
-              en un lugar donde se puede respirar tranquilidad tanto para nuestros clientes como para nuestra fuerza de trabajo, 
-              siempre comprometidos con la calidad de nuestros productos y servicio sin dejar de lado el cuidado del medio ambiente, 
-              el cuidado de nuestra gente y de nuestra localidad.
-            </p>
-            <a href="#about-us" class="btn btn-outline-success" role="button">Mas sobre nosotros</a>
+          <div class="col-12 col-xs-12 col-sm-12 col-md-6">
+            <div id="about-text" class="text-start pt-4">
+              <h2 class="py-2">About Us</h2>
+              <h5>Nuestro café</h5>
+              <p>
+                Este microemprendimiento empezó en el 2014 en Sydney, Australia. Tres argentinos que se maravillaron con el lugar central que ocuaba el 
+                <strong>café</strong> en su cultura, las cafeterías hermosas y el protagonismo de los Baristas.
+              </p>
+              <p>
+                Cuando volvimos a Buenos Aires,teníamos decidido que queríamos abrir un negocio, y no había dudas de que iba a estar relacionado con el mundo cafetero.
+              </p>
+              <a href="#about-us" class="btn btn-outline-success" role="button">Mas sobre nosotros</a>
+            </div>
           </div>
         </div>
       </div>
@@ -111,9 +112,9 @@
             <div class="card shadow-sm p-4">
               <div class="card-body">
                 <img width="60" src="img/menuImg1.png" alt="Foto de un vaso de cafe">
-                <h5 class="text-primary card-title pt-3">Cafe latte</h5>
-                <p class="card-text">Descripcion de como es un cafe latte</p>
-                <a href="#compra-cafe1" class="btn btn-outline-success" role="button">Comprar</a>
+                <h5 class="text-primary card-title pt-3">Flat white</h5>
+                <p class="card-text">Esta bebida nació en Nueva Zelanda en la década de 1970 como una alternativa al capuccino espumoso. La diferencia principal es que no tiene espuma de leche.</p>
+                <a href="menu.html" class="btn btn-outline-success" role="button">Comprar</a>
               </div>
             </div>
           </div>
@@ -122,20 +123,20 @@
             <div class="card shadow-sm p-4">
               <div class="card-body">
                 <img width="60" src="img/menuImg2.png" alt="Foto de un vaso de cafe">
-                <h5 class="text-primary card-title pt-3">Cafe latte</h5>
-                <p class="card-text">Descripcion de como es un cafe latte</p>
-                <a href="#compra-cafe2" class="btn btn-outline-success" role="button">Comprar</a>
+                <h5 class="text-primary card-title pt-3">Café americano</h5>
+                <p class="card-text">También conocido simplemente como americano, en este estilo de café se agrega agua caliente para variar la intensidad del espresso doble. Es como expresso simple.</p>
+                <a href="menu.html" class="btn btn-outline-success" role="button">Comprar</a>
               </div>
             </div>
           </div>
-    
+          
           <div class="col">
             <div class="card shadow-sm p-4">
               <div class="card-body">
                 <img width="60" src="img/menuImg3.png" alt="Foto de un vaso de cafe">
-                <h5 class="text-primary card-title pt-3">Cafe latte</h5>
-                <p class="card-text">Descripcion de como es un cafe latte</p>
-                <a href="#compra-cafe3" class="btn btn-outline-success" role="button">Comprar</a>
+                <h5 class="text-primary card-title pt-3">Capuccino</h5>
+                <p class="card-text">Típica bebida italiana preparada con un shot de espresso, leche caliente y espuma de leche al vapor. En Europa es muy popular a cualquier hora del día, menos en Italia.</p>
+                <a href="menu.html" class="btn btn-outline-success" role="button">Comprar</a>
               </div>
             </div>
           </div>
@@ -144,26 +145,69 @@
             <div class="card shadow-sm p-4">
               <div class="card-body">
                 <img width="60" src="img/menuImg4.png" alt="Foto de un vaso de cafe">
-                <h5 class="text-primary card-title pt-3">Cafe latte</h5>
-                <p class="card-text">Descripcion de como es un cafe latte</p>
-                <a href="#compra-cafe4" class="btn btn-outline-success" role="button">Comprar</a>
+                <h5 class="text-primary card-title pt-3">Café Vertido</h5>
+                <p class="card-text">Es un café largo que se prepara vertiendo agua hirviendo sobre el café molido en un filtro. Se puede preparar de forma manual o con una cafetera de filtro. </p>
+                <a href="menu.html" class="btn btn-outline-success" role="button">Comprar</a>
               </div>
             </div>
           </div>
       </section>
       <!--Fin de lo mas vendido-->
-      <article>
-        <div id="myButton"></div>
-      </article>
+
+      <!--Inicio de contacto-->
+
+      <!--Fin de contacto-->
       
     </main>
     <!--Inicio del Footer-->
     <footer class="py-4">
       <div class="text-center text-light">
-        <img width="100" src="img/logo.jpg" alt="Logo de padre cafe">
+        <a href="index.html"><img width="100" src="img/logo.jpg" alt="Logo de padre cafe"></a>
         <p>
           Este es el lugar perfecto para encontrar un lugar agradable y acogedor para tomar un sorbo. Encontraras cafe de calidad, cafe en grano y mucho mas en este sitio web
         </p>
+      </div>
+      <div class="container">
+        <div class="row">
+            <div class="col-6 col-md text-light">
+              <h5 id="contacto">Contacto</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="https://www.instagram.com/">Instagram</a></li>
+                <li><a class="link-secondary" href="https://es-la.facebook.com/">Facebook</a></li>
+                <li><a class="link-secondary" href="#locales">Tiendas</a></li>
+                <li><a class="link-secondary" href="#">+54 9 11 0000-0000</a></li>
+                <li><a class="link-secondary" href="menu.html">Menu</a></li>
+                <li><a class="link-secondary" href="#">Tu pedido</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md text-light">
+              <h5>Café</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="#">Café de especialidad</a></li>
+                <li><a class="link-secondary" href="#">Granos de café</a></li>
+                <li><a class="link-secondary" href="#">Maquina de café”</a></li>
+                <li><a class="link-secondary" href="#">Accesorios barista</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md text-light">
+              <h5>Muy pronto</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="#">Nuevas tiendas</a></li>
+                <li><a class="link-secondary" href="#">Cursos de barista</a></li>
+                <li><a class="link-secondary" href="#">Té en hebras</a></li>
+                <li><a class="link-secondary" href="#">Comidas</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md text-light">
+              <h5>Sobre nosotros</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="about_us.html">Equipo</a></li>
+                <li><a class="link-secondary" href="locales">Tiendas</a></li>
+                <li><a class="link-secondary" href="#">Privacidad</a></li>
+                <li><a class="link-secondary" href="#">Terminos</a></li>
+              </ul>
+            </div>
+          </div>
       </div>
       <div class="text-center text-light">
         <a href="https://es-la.facebook.com/"><i class="bi bi-facebook text-light px-2"></i></a>
@@ -175,7 +219,5 @@
     </footer>
     <!--Fin del Footer-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-    <script src="/path/to/cdn/jquery.min.js"></script>
-    <script src="venom-button.min.js"></script>
   </body>
 </html>
