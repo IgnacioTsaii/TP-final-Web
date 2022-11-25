@@ -18,3 +18,9 @@ footer{
     padding: 2em;
     width: 20rem;
 }
+.badge-notify{
+    background:red;
+    position:relative;
+    top: -20px;
+    right: 10px;
+}
