@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Padre café</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="pb-5">
+      <!-- Inicio del Navbar -->
+        <nav id="navbar" class="navbar navbar-expand-md fixed-top navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand d-flex align-self-center" href="index.html"><img width="60" src="img/logo.jpg" alt="logo de padre cafe"></a>  
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuDesplegable" aria-controls="menuDesplegable" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuDesplegable">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about_us.html">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu.html">Menú</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+                <li>
+                  <i class="bi bi-cart4 nav-link my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <!-- Fin del Navbar -->   
+
+    <!--Inicio del menu-->
+    <div class="py-5 bg-light">
+        <h2 class="text-primary">Cafeteria</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 py-3 shadow-sm p-3 mb-5 bg-body rounded">
+                    <img src="img/menu-1.png" class="rounded-circle text-center" width="150" height="150" alt="Cafe">
+            
+                    <h3 class="fw-normal pt-2">Café latte</h3>
+                    <p><strong>$699</strong></p>
+                    <p class="text-secondary">También conocida en Europa como “cafe au lait”, lo que literalmente significa “café con leche”.</p>
+                    
+                    <button class="btn btn-success my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="699" data-quantity="1" data-image="img/menu-1.png">Add to Cart</button>
+                </div>
+                <div class="col-lg-4 py-3 shadow-sm p-3 mb-5 bg-body rounded">
+                    <img src="img/menu-2.png" class="rounded-circle" width="150" height="150" alt="cafe">
+            
+                    <h3 class="fw-normal pt-2">Café moka</h3>
+                    <p><strong>$890</strong></p>
+                    <p class="text-secondary">Es una variante del capuccino con jarabe de chocolate o cacao en polvo, no es tan dulce como se espera.</p>
+                    <button class="btn btn-success my-cart-btn" data-id="2" data-name="product 2" data-summary="summary 2" data-price="890" data-quantity="1" data-image="img/menu-2.png">Add to Cart</button>
+                </div>
+                <div class="col-lg-4 py-3 shadow-sm p-3 mb-5 bg-body rounded">
+                    <img src="img/menu-3.png" class="rounded-circle" width="150" height="150" alt="cafe">
+            
+                    <h3 class="fw-normal pt-2">Flat white</h3>
+                    <p><strong>$450</strong></p>
+                    <p class="text-secondary">Esta bebida nació como una alternativa al capuccino. La diferencia principal es que no tiene espuma de leche.</p>
+                    <button class="btn btn-success my-cart-btn" data-id="3" data-name="product 3" data-summary="summary 3" data-price="450" data-quantity="1" data-image="img/menu-3.png">Add to Cart</button>
+                </div>
+                <div class="col-lg-4 py-3 shadow-sm p-3 mb-5 bg-body rounded">
+                    <img src="img/menu-4.png" class="rounded-circle" width="150" height="150" alt="cafe">
+            
+                    <h3 class="fw-normal pt-2">Café americano</h3>
+                    <p><strong>$500</strong></p>
+                    <pc class="text-secondary">También conocido simplemente como americano,se agrega agua caliente para variar la intensidad del espresso doble.</p>
+                    <button class="btn btn-success my-cart-btn" data-id="4" data-name="product 4" data-summary="summary 4" data-price="500" data-quantity="1" data-image="img/menu-4.png">Add to Cart</button>
+                </div>
+                <div class="col-lg-4 py-3 shadow-sm p-3 mb-5 bg-body rounded">
+                    <img src="img/menu-5.png" class="rounded-circle" width="150" height="150" alt="cafe">
+            
+                    <h3 class="fw-normal pt-2">Latte Macchiato</h3>
+                    <p><strong>$990</strong></p>
+                    <pc class="text-secondary">Latte macchiato significa “leche manchada”. A diferencia de un latte, el espresso se agrega a la leche.</p>
+                    <button class="btn btn-success my-cart-btn" data-id="5" data-name="product 5" data-summary="summary 5" data-price="990" data-quantity="1" data-image="img/menu-5.png">Add to Cart</button>
+                </div>
+                <div class="col-lg-4 py-3 shadow-sm p-3 mb-5 bg-body rounded">
+                    <img src="img/menu-6.png" class="rounded-circle" width="150" height="150" alt="cafe">
+            
+                    <h3 class="fw-normal pt-2">Capuccino</h3>
+                    <p><strong>$660</strong></p>
+                    <pc class="text-secondary">Típica bebida italiana preparada con un shot de espresso, leche caliente y espuma de leche al vapor.</p>
+                    <button class="btn btn-success my-cart-btn" data-id="6" data-name="product 6" data-summary="summary 6" data-price="660" data-quantity="1" data-image="img/menu-6.png">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-primary">Café en grano</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 py-3 shadow-sm p-3 mb-5 bg-body rounded">
+                    <img src="img/beans-1.png" class="rounded-circle" width="150" height="150" alt="Cafe">
+            
+                    <h3 class="fw-normal pt-2">Arábica</h3>
+                    <p><strong>$400</strong></p>
+                    <p class="text-secondary">El champán del café, tienen una espectacular riqueza aromática, lo que produce un sabor suave y profundo al mismo tiempo.</p>
+                    
+                    <button class="btn btn-success my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="400" data-quantity="1" data-image="img/beans-1.jpg">Add to Cart</button>
+                </div>
+                <div class="col-lg-4 py-3 shadow-sm p-3 mb-5 bg-body rounded">
+                    <img src="img/beans-2.png" class="rounded-circle" width="150" height="150" alt="cafe">
+            
+                    <h3 class="fw-normal pt-2">Kopi Luwak</h3>
+                    <p><strong>$560</strong></p>
+                    <p class="text-secondary">Para una experiencia gourmet poco común, pruebe los premiados granos extraídos del estiércol de civeta indonesia.</p>
+                    <button class="btn btn-success my-cart-btn" data-id="2" data-name="product 2" data-summary="summary 2" data-price="560" data-quantity="1" data-image="img/beans-2.jpg">Add to Cart</button>
+                </div>
+                <div class="col-lg-4 py-3 shadow-sm p-3 mb-5 bg-body rounded">
+                    <img src="img/beans-3.png" class="rounded-circle" width="150" height="150" alt="cafe">
+            
+                    <h3 class="fw-normal pt-2">Robusta</h3>
+                    <p><strong>$320</strong></p>
+                    <p class="text-secondary">La cafeína reina del café, contienen aproximadamente el doble del estimulante que los granos Arábica. Esto le da al café un sabor fuerte y ligeramente amargo.</p>
+                    <button class="btn btn-success my-cart-btn" data-id="3" data-name="product 3" data-summary="summary 3" data-price="320" data-quantity="1" data-image="img/beans-3.jpg">Add to Cart</button>
+                </div>
+                <div class="col-lg-4 py-3 shadow-sm p-3 mb-5 bg-body rounded">
+                    <img src="img/beans-4.png" class="rounded-circle" width="150" height="150" alt="cafe">
+            
+                    <h3 class="fw-normal pt-2">Kenya AA</h3>
+                    <p><strong>$220</strong></p>
+                    <pc class="text-secondary">Como su nombre lo indica, esta variedad de grano de café es originaria de Kenia. Suele ser cultivada en tierras volcánicas, y de allí obtienen un sabor intenso.</p>
+                    <button class="btn btn-success my-cart-btn" data-id="4" data-name="product 4" data-summary="summary 4" data-price="220" data-quantity="1" data-image="img/beans-4.jpg">Add to Cart</button>
+                </div>
+                <div class="col-lg-4 py-3 shadow-sm p-3 mb-5 bg-body rounded">
+                    <img src="img/beans-5.png" class="rounded-circle" width="150" height="150" alt="cafe">
+            
+                    <h3 class="fw-normal pt-2">Moka</h3>
+                    <p><strong>$690</strong></p>
+                    <pc class="text-secondary">La particularidad de este grano es su bajo nivel de acidez y su sabor similar al chocolate. Pero no es lo mismo que  la combinación de café y cacao</p>
+                    <button class="btn btn-success my-cart-btn" data-id="5" data-name="product 5" data-summary="summary 5" data-price="690" data-quantity="1" data-image="img/beans-5.png">Add to Cart</button>
+                </div>
+                <div class="col-lg-4 py-3 shadow-sm p-3 mb-5 bg-body rounded">
+                    <img src="img/beans-6.png" class="rounded-circle" width="150" height="150" alt="cafe">
+            
+                    <h3 class="fw-normal pt-2">Tarrazú</h3>
+                    <p><strong>$460</strong></p>
+                    <pc class="text-secondary">La región volcánica y de montañas de Costa Rica bautiza a este grano de café que se cultiva allí, tiene un sabor semejante al chocolate y un poco ácido.</p>
+                    <button class="btn btn-success my-cart-btn" data-id="6" data-name="product 6" data-summary="summary 6" data-price="460" data-quantity="1" data-image="img/beans-6.png">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin del menu-->
+
+    <!--Inicio del Footer-->
+    <footer class="py-4">
+      <div class="text-center text-light">
+        <a href="index.html"><img width="100" src="img/logo.jpg" alt="Logo de padre cafe"></a>
+        <p>
+          Este es el lugar perfecto para encontrar un lugar agradable y acogedor para tomar un sorbo. Encontraras cafe de calidad, cafe en grano y mucho mas en este sitio web
+        </p>
+      </div>
+      <div class="container">
+        <div class="row">
+            <div class="col-6 col-md text-light">
+              <h5 id="contacto">Contacto</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="https://www.instagram.com/">Instagram</a></li>
+                <li><a class="link-secondary" href="https://es-la.facebook.com/">Facebook</a></li>
+                <li><a class="link-secondary" href="#locales">Tiendas</a></li>
+                <li><a class="link-secondary" href="#">+54 9 11 0000-0000</a></li>
+                <li><a class="link-secondary" href="menu.html">Menú</a></li>
+                <li><a class="link-secondary" href="#">Tu pedido</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md text-light">
+              <h5>Café</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="#">Café de especialidad</a></li>
+                <li><a class="link-secondary" href="#">Granos de café</a></li>
+                <li><a class="link-secondary" href="#">Maquina de café”</a></li>
+                <li><a class="link-secondary" href="#">Accesorios barista</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md text-light">
+              <h5>Muy pronto</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="#">Nuevas tiendas</a></li>
+                <li><a class="link-secondary" href="#">Cursos de barista</a></li>
+                <li><a class="link-secondary" href="#">Té en hebras</a></li>
+                <li><a class="link-secondary" href="#">Comidas</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md text-light">
+              <h5>Sobre nosotros</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="about_us.html">Equipo</a></li>
+                <li><a class="link-secondary" href="locales">Tiendas</a></li>
+                <li><a class="link-secondary" href="#">Privacidad</a></li>
+                <li><a class="link-secondary" href="#">Terminos</a></li>
+                <li><a class="link-secondary" href="#">NO se </a></li>
+                <li><a class="link-secondary" href="#">NO se </a></li>
+                <li><a class="link-secondary" href="#">NO se </a></li>
+                <li><a class="link-secondary" href="#">NO se </a></li>
+                <li><a class="link-secondary" href="#">NO se </a></li>
+                <li><a class="link-secondary" href="#">NO se </a></li>
+                <li><a class="link-secondary" href="#">NO se </a></li>
+                <li><a class="link-secondary" href="#">NO se </a></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+      <div class="text-center text-light">
+        <a href="https://es-la.facebook.com/"><i class="bi bi-facebook text-light px-2"></i></a>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram text-light px-2"></i></a>
+        <a href="https://twitter.com/?lang=es"><i class="bi bi-twitter text-light px-2"></i></a>
+        <a href="https://github.com/login"><i class="bi bi-github text-light px-2"></i></a>
+        <a href="https://web.whatsapp.com/"><i class="bi bi-whatsapp text-light px-2"></i></a>
+      </div>
+    </footer>
+    <!--Fin del Footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mycart.min.js"></script>
+    <script type='text/javascript' src="js/jquery.mycart.js"></script>
+    <script type="text/javascript">
+      $(function () {
+    
+        var goToCartIcon = function($addTocartBtn){
+          var $cartIcon = $(".my-cart-icon");
+          var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
+          $addTocartBtn.prepend($image);
+          var position = $cartIcon.position();
+          $image.animate({
+            top: position.top,
+            left: position.left
+          }, 500 , "linear", function() {
+            $image.remove();
+          });
+        }
+    
+        $('.my-cart-btn').myCart({
+          currencySymbol: '$',
+          classCartIcon: 'my-cart-icon',
+          classCartBadge: 'my-cart-badge',
+          classProductQuantity: 'my-product-quantity',
+          classProductRemove: 'my-product-remove',
+          classCheckoutCart: 'my-cart-checkout',
+          affixCartIcon: true,
+          showCheckoutModal: true,
+          numberOfDecimals: 2,
+          clickOnAddToCart: function($addTocart){
+            goToCartIcon($addTocart);
+          },
+          afterAddOnCart: function(products, totalPrice, totalQuantity) {
+            console.log("afterAddOnCart", products, totalPrice, totalQuantity);
+          },
+          clickOnCartIcon: function($cartIcon, products, totalPrice, totalQuantity) {
+            console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
+          },
+          checkoutCart: function(products, totalPrice, totalQuantity) {
+            var checkoutString = "Total Price: " + totalPrice + "\nTotal Quantity: " + totalQuantity;
+            checkoutString += "\n\n id \t name \t summary \t price \t quantity \t image path";
+            $.each(products, function(){
+              checkoutString += ("\n " + this.id + " \t " + this.name + " \t " + this.summary + " \t " + this.price + " \t " + this.quantity + " \t " + this.image);
+            });
+            alert(checkoutString)
+            console.log("checking out", products, totalPrice, totalQuantity);
+          },
+          getDiscountPrice: function(products, totalPrice, totalQuantity) {
+            console.log("calculating discount", products, totalPrice, totalQuantity);
+            return totalPrice * 0.5;
+          }
+        });
+    
+        $("#addNewProduct").click(function(event) {
+          var currentElementNo = $(".row").children().length + 1;
+          $(".row").append('<div class="col-md-3 text-center"><img src="images/img_empty.png" width="150px" height="150px"><br>product ' + currentElementNo + ' - <strong>$' + currentElementNo + '</strong><br><button class="btn btn-danger my-cart-btn" data-id="' + currentElementNo + '" data-name="product ' + currentElementNo + '" data-summary="summary ' + currentElementNo + '" data-price="' + currentElementNo + '" data-quantity="1" data-image="images/img_empty.png">Add to Cart</button><a href="#" class="btn btn-info">Details</a></div>')
+        });
+      });
+    </script>
+  </body>
+</html>
